@@ -182,7 +182,7 @@ func (t *Tools) DownloadStaticFile(w http.ResponseWriter, r *http.Request, p, fi
 type JSONResponse struct {
 	Error   bool        `json:"error"`
 	Message string      `json:"message"`
-	Data    interface{} `json:"data,omitempty`
+	Data    interface{} `json:"data,omitempty"`
 }
 
 func (t *Tools) ReadJSON(w http.ResponseWriter, r *http.Request, data interface{}) error {
